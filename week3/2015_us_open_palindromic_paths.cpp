@@ -5,7 +5,6 @@ using namespace std;
 
 int N;    
 
-
 void dfs_top_left(char** matrix, int x, int y, unordered_set<string>* sets, string curr) {
     if (x + y == N - 1) {
         sets[x].insert(curr + matrix[x][y]);
